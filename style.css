@@ -1,4 +1,7 @@
 /* Globales */
+
+
+
 section{
     display: flex;
     flex-direction: column;
@@ -271,6 +274,20 @@ a img{
     background-color: #0056b3; /* Color de fondo al pasar el mouse */
 }
 
+/*Pagina Accesorios*/
+
+.accesorios{
+    background: rgba(51, 51, 51, 0.21);
+    max-width: fit-content;
+    padding: 5rem;
+}
+
+.card{
+    background: rgba(246, 224, 224, 0.74);
+}
+
+
+
 /* Diseño responsivo */
 @media screen and (max-width: 568px) {
     .overlay p{
@@ -290,9 +307,10 @@ a img{
         font-size: 1.2rem;
          
     }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navbar-brand{
         display: none;
     }
@@ -313,6 +331,12 @@ a img{
         padding-bottom: 100px;
     }
 
+    .nav-item{
+        font-size: 0.8rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    
 }
 
 @media screen and (min-width: 700px) {
