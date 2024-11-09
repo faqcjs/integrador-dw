@@ -1,9 +1,9 @@
 /* Globales */
 
-html{
+p{
     font-family: "Roboto Flex", sans-serif;
-    
-}
+} 
+
 
 section{
     display: flex;
@@ -12,7 +12,7 @@ section{
     justify-content: center;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
     font-size: 1.5rem;
     font-weight:500;
 }
@@ -33,9 +33,9 @@ h1{
 }
 
 .seccion-titulo{
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 15px 0;
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto Flex', cursive;
 }
 
 .seccion-descripcion{
@@ -191,6 +191,10 @@ a{
 
 }
 
+.contacto h1{
+    font-size: 2rem;
+}
+
 .contacto .descripcion{
     color:#333333;
     font-size: 1.3rem;
@@ -216,9 +220,6 @@ a{
 
 .btn-danger{
     background-color: #d10000;
-}
-#contacto{
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Footer */
@@ -311,6 +312,10 @@ a img{
 .card{
     background: rgba(246, 224, 224, 0.74);
 }
+.card-body{
+    padding-top: rem;
+    text-align: start;
+}
 
 /*Pagina Contacto*/
 
@@ -354,21 +359,21 @@ a img{
     font-weight: 600;
 }
 
-.nombre{
+.nombre {
     background: rgba(217, 217, 217, 1);
 }
 
 .correo{
-    background: rgba(217, 217, 217, 1);
+    background: rgba(217, 217, 217, 0.521);
 }
 
 .asunto{
-    background: rgba(217, 217, 217, 1);
+    background: rgba(217, 217, 217, 0.336);
 
 }
 
 .mensaje{
-    background: rgba(217, 217, 217, 1);
+    background: rgba(217, 217, 217, 0.212);
 
 }
 
@@ -377,7 +382,7 @@ a img{
 .hero-blog{
     background-image: url(img/fondo-blog.png);
     height: 350px;
-    font-family: Roboto Flex;
+    font-family: "Roboto Flex", sans-serif;
     color: red;
     font-size: 24px;
     font-weight: 500;
@@ -386,9 +391,43 @@ a img{
 }
 .conatainer-q{
     background-color: #333333;
-    
+
 }
 
+.hero-cards{
+    
+    background-image: url(img/fondo-blog.png);
+    padding: 3rem;
+    padding-bottom: 20px;
+
+}
+
+.card{
+    border-top-left-radius:16px ;
+    border-top-right-radius:16px ;
+    border: none;
+    font-weight: bold;
+ 
+}
+
+.card-body{
+    gap: 5rem;
+}
+
+
+
+.card-body h6{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-body p{
+    font-weight: 500;
+}
+
+.card img{
+    border-radius: 16px;
+}
 
 
 
