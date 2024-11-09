@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Arias Facundo">
+    
     <meta name="description" content="Vortelix">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fuentes -->
@@ -61,60 +61,80 @@
     <!-- Hero -->
     <section class="hero position-relative">
         <!-- Carousel (fondo) -->
-        <img src="img/hero-img.png" alt="" class="hero-imagen">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/hero-img.png" class="d-block w-100 carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hero-1.jpg" class="d-block w-100 carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hero-2.jpg" class="d-block w-100 carousel-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <!-- Planes -->
-     <section class="planes seccion-oscura" id="servicios">
-        <div class="container text-center mt-5">
-            <!-- Sección de Fibra Óptica -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h2>Fibra Óptica <span>📡</span></h2>
-                </div>
-                <!-- Tarjetas de Fibra Óptica -->
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card">
-                        <img src="img/promo-1.png" alt="Plan Fibra Óptica 1">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card featured medio">
-                        <img src="img/promo-2.png" alt="Plan Fibra Óptica 2">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card">
-                        <img src="img/promo-3.png" alt="Plan Fibra Óptica 3">
-                    </div>
+<section class="planes seccion-oscura py-5" id="servicios">
+    <div class="container text-center">
+        <!-- Sección de Fibra Óptica -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2>Fibra Óptica <span>📡</span></h2>
+            </div>
+            <!-- Tarjetas de Fibra Óptica -->
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card">
+                    <img src="img/promo-1.png" class="img-fluid" alt="Plan Fibra Óptica 1">
                 </div>
             </div>
-        
-            <!-- Sección de Conexión Satelital -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h2>Conexión Satelital <span>🛰️</span></h2>
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card featured medio">
+                    <img src="img/promo-2.png" class="img-fluid" alt="Plan Fibra Óptica 2">
                 </div>
-                <!-- Tarjetas de Conexión Satelital -->
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card">
-                        <img src="img/promo-4.png" alt="Plan Satelital 1">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card featured medio">
-                        <img src="img/promo-5.png" alt="Plan Satelital 2">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-3">
-                    <div class="plan-card">
-                        <img src="img/promo-6.png" alt="Plan Satelital 3">
-                    </div>
+            </div>
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card">
+                    <img src="img/promo-3.png" class="img-fluid" alt="Plan Fibra Óptica 3">
                 </div>
             </div>
         </div>
-        
-     </section>
+
+        <!-- Sección de Conexión Satelital -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2>Conexión Satelital <span>🛰️</span></h2>
+            </div>
+            <!-- Tarjetas de Conexión Satelital -->
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card">
+                    <img src="img/promo-4.png" class="img-fluid" alt="Plan Satelital 1">
+                </div>
+            </div>
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card featured medio">
+                    <img src="img/promo-5.png" class="img-fluid" alt="Plan Satelital 2">
+                </div>
+            </div>
+            <div class="col-12  col-lg-4 d-flex justify-content-center my-3">
+                <div class="plan-card">
+                    <img src="img/promo-6.png" class="img-fluid" alt="Plan Satelital 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
      
      <!-- Experiencia -->
      <section class="experiencia seccion-oscura">

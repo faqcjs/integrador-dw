@@ -101,12 +101,16 @@ a{
     overflow: hidden; 
 }
 
-.hero-imagen{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover
+.carousel-inner, .carousel-item, .carousel-img {
+    width: 100%;
 }
 
+/* Asegurar que las imágenes ocupen el 100% del carrusel sin distorsión */
+.carousel-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 /* Planes */
 
@@ -162,7 +166,6 @@ a{
 .rectangulo{
     margin-top: -4rem;
     background-color: #3A98FF;
-    
     border-radius: 10px;
     box-shadow: 0px 1px 3px 1px rgb(173, 172, 172);
 }
@@ -286,19 +289,78 @@ a img{
     background: rgba(246, 224, 224, 0.74);
 }
 
+/*Pagina Contacto*/
+
+
+.formulario {
+    background-image: url(img/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.form-container {
+    background-image: url(img/fondo-contacto.png);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 675px;
+    width: 100%;
+}
+
+
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: black;
+    font-weight:bold;
+    
+}
+
+.form-container label{
+    font-weight: 600;
+}
+
+.nombre{
+    background: rgba(217, 217, 217, 1);
+}
+
+.correo{
+    background: rgba(217, 217, 217, 1);
+}
+
+.asunto{
+    background: rgba(217, 217, 217, 1);
+
+}
+
+.mensaje{
+    background: rgba(217, 217, 217, 1);
+
+}
+
+
 
 
 /* Diseño responsivo */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 575px) {
     .overlay p{
         font-size: 20px;
     }
     .overlay i{
         font-size: 40px;
     }
-    .planes{
-        height: auto;
-    }
+   
     .plan-card img{
         max-width: 20%;
         height: auto;
@@ -308,7 +370,12 @@ a img{
          
     }
 
+    .carousel-inner, .carousel-item {
+        height: 50vh;
+    }
 }
+
+
 
 @media screen and (max-width: 767px) {
     .navbar-brand{
@@ -316,14 +383,18 @@ a img{
     }
     
     .hero{
-        height: 265px;
+        height: 400px;
+    }
+
+    .carousel-inner, .carousel-item {
+        height: 60vh;
     }
     
     .plan-card img{
         max-width: 80%;
         height: auto;
     }
-    
+
     
     .experiencia{
         font-size: 1.2rem;
@@ -347,4 +418,14 @@ a img{
     .hero-inferior-img{
         max-width: 600px;
     }
+}
+@media screen and (max-width: 975px){
+    .planes{
+        padding: 0;
+        margin: 0;
+    }
+    .carousel-inner, .carousel-item {
+        height: 100vh;
+    }
+
 }
