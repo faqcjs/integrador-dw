@@ -115,7 +115,7 @@ a{
     width: 100%;
 }
 
-/* Asegurar que las imágenes ocupen el 100% del carrusel sin distorsión */
+
 .carousel-img {
     object-fit: cover;
     width: 100%;
@@ -228,6 +228,8 @@ footer{
     min-height: 400px;
     
     background-color: #d10000;
+    gap:2rem;
+     
 }
 
 footer img{
@@ -464,11 +466,15 @@ a img{
     .carousel-inner, .carousel-item {
         height: 50vh;
     }
+
+    .form-container{
+        width: 80%;
+    }
 }
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .navbar-brand{
         display: none;
     }
@@ -503,11 +509,16 @@ a img{
         margin: 0;
     }
     
+   
+    
 }
 
 @media screen and (min-width: 700px) {
     .hero-inferior-img{
         max-width: 600px;
+    }
+    .form-container{
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 975px){
@@ -518,5 +529,7 @@ a img{
     .carousel-inner, .carousel-item {
         height: 100vh;
     }
-
+    .form-container{
+        max-width: 80%;
+    }
 }
