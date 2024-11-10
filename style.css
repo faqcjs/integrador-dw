@@ -1,9 +1,9 @@
 /* Globales */
 
-p{
-    font-family: "Roboto Flex", sans-serif;
-} 
 
+body{
+    font-family: "Roboto Flex", sans-serif;
+}
 
 section{
     display: flex;
@@ -351,7 +351,7 @@ a img{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 675px;
-    width: 100%;
+    min-width: 50%;
 }
 
 
@@ -467,10 +467,7 @@ a img{
         height: 50vh;
     }
 
-    .form-container{
-        width: 80%;
-    }
-}
+    
 
 
 
@@ -517,10 +514,7 @@ a img{
     .hero-inferior-img{
         max-width: 600px;
     }
-    .form-container{
-        max-width: 80%;
-    }
-}
+    
 @media screen and (max-width: 975px){
     .planes{
         padding: 0;
