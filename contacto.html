@@ -60,30 +60,34 @@
     </nav>
     <!--Contacto-->
     <section class="formulario">
-        <div class="form-container ">
-            <h5 class="form-title">Formulario de Contacto</h5>
-            <hr>
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico:</label>
-                    <input type="email" class="form-control correo" id="email" placeholder="Ingresa tu correo electrónico" required>
-                </div>
-                <div class="mb-3">
-                    <label for="asunto" class="form-label">Asunto:</label>
-                    <input type="text" class="form-control asunto" id="asunto" placeholder="Ingresa el asunto" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea class="form-control mensaje" id="mensaje" rows="4" placeholder="Ingresa tu mensaje aquí" required></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-submit">Enviar</button>
-                </div>
-            </form>
+        <div class="container  d-flex align-items-center justify-content-center">
+            <div class="form-container p-4 rounded-4">
+                <h2 class="text-center mb-4 text-white">Formulario de Contacto</h2>
+                <hr>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control custom-input" id="nombre" placeholder="Juan Pérez">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control custom-input" id="email" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Aunto</label>
+                        <input type="txt" class="form-control custom-input" id="telefono" placeholder="Contratar plan:">
+                    </div>
+                    <div class="mb-3">
+                        <label for="empresa" class="form-label">Mensaje</label>
+                        <textarea class="form-control custom-input" id="empresa" placeholder="Nombre de tu empresa"></textarea>
+
+                    </div>
+                    <button type="submit" class="btn custom-button w-100 mb-3">Enviar</button>
+                    <p class="text-center text-gray mb-0">
+                        ¿No conoces nuestros planes? <a href="./index.html#servicios" class="text-accent">Planes!</a>
+                    </p>
+                </form>
+            </div>
         </div>
     </section>
 
