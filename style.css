@@ -50,6 +50,7 @@ h4, h5, h6{
 
 .titulo-amarillo{
     color:rgba(255, 255, 120, 1);
+    padding-bottom: 25px;
 
 }
 .seccion-descripcion{
@@ -196,6 +197,7 @@ a{
     border-left: 10px solid #e8e6d7;
     height: 100%;
 }
+
 
 
 /* Seccion contacto */
@@ -345,7 +347,7 @@ a img{
 }
 
 .card{
-    background: rgba(246, 224, 224, 0.74);
+    background: white;
 }
 .card-body{
     padding-top: rem;
@@ -456,15 +458,18 @@ hr{
     background-image: url(img/fondo-blog.png);
     height: 350px;
     font-family: "Roboto Flex", sans-serif;
-    color: red;
+    color:#d10000;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 28.13px;
     text-align: left;
 }
 .conatainer-q{
     background-color: #333333;
+}
 
+.texto-rojo{
+    color: #d10000;
 }
 
 .hero-cards{
@@ -479,7 +484,7 @@ hr{
     border-radius: 16px;
     border: none;
     font-weight: bold;
-    background: rgba(246, 224, 224, 0.74);
+    background: white
 }
 
 .card-body-1{
