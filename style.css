@@ -347,7 +347,7 @@ a img{
 }
 
 .card{
-    background: white;
+    background: #F2F2F2;
 }
 .card-body{
     padding-top: rem;
@@ -363,6 +363,10 @@ a img{
     font-weight: 600;
 }
 
+.rosado{
+    background: rgba(246, 224, 224, 0.74);
+
+}
 
 
 /*Pagina Contacto*/
