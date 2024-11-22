@@ -369,6 +369,7 @@ a img{
 }
 
 
+
 /*Pagina Contacto*/
 
 
@@ -396,8 +397,19 @@ hr{
     color: white;
 }
 
+.form-container h2{
+    
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
 .form-label {
-    color: var(--gray);
+    color: white;
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
 }
