@@ -1,14 +1,19 @@
 /* Globales */
 :root {
-    --primary: #d10000;
-    --dark: #333333;
-    --dark-depth: #0a0a0a;
-    --gray: #B4BEC9;
-    --gray-depth: #2D3B4A;
+    --verde: #142426;
+    --azul: #2E3D59;
+    --celeste: #7394BF;
+    --gris: #BFBFBF;
+    --blanco: ##F2F2F2;
 }
 
+
+
 body{
-    font-family: "Roboto Flex", sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.6;
 }
 
 section{
@@ -18,15 +23,19 @@ section{
     justify-content: center;
 }
 
-h2{
-    font-size: 2.5rem;
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }
-
-h4, h5, h6{
-    font-size: 1.5rem;
-    font-weight:500;
+button, .cta {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #004080;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
-
 .seccion-oscura{
     color: white;
     background-color: #333333 ;
@@ -67,7 +76,7 @@ h4, h5, h6{
 }
 
 .texto-blanco{
-    color: white;
+    color: var(--blanco);
 }
 
 a{
@@ -84,7 +93,12 @@ a{
 
 .navbar{
     padding: 1rem;
-    background-color: #d10000;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del hero */
     
 }
 
@@ -99,24 +113,20 @@ a{
     gap: 2rem;
     color: black;
     font-size: 1.5rem;
-    
-    
-
 }
 
 .nav-item{
-    background-color: #002333;
-    border-radius: 35px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav-item a{
     color: white;
-    
+    font-weight: 700;
+    line-height: 1.6;
 }
 
 .nav-item a:hover{
-    color: rgb(228, 224, 224);
+    color: var(--celeste);
 }
 
 
@@ -138,7 +148,7 @@ a{
 
 /* Hero */
 .hero {
-    height: 565px; 
+    height:fit-content; 
     overflow: hidden; 
 }
 
