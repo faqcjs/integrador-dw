@@ -428,88 +428,62 @@ a{
 .accordion-body {
     border-top: 1px solid #7394bf7b; /* Grosor de 5px y color negro */
     border-radius: 0 !important; /* Bordes no redondeados */
+    font-size: 1.2rem;
 }
 
 
 /* Footer */
 
-footer{
-    min-height: 400px;
-    
-    background-color: #d10000;
-    gap:2rem;
-     
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-footer img{
-    width: 153px;
-    height: 135px;
+footer img {
+    width: 150px;
+    height: auto;
 }
 
-.footer-icon{
-    font-size: 5rem;
-    margin: 10px;
+.iconos-redes-sociales {
+    margin: 20px 0;
 }
 
-a img{
-    height: 50px;
-    width: 50px;
-}
-.iconos-redes-sociales a{
+.iconos-redes-sociales a {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.iconos-redes-sociales i{
-    color: black;
-    font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+.iconos-redes-sociales a:hover {
+    transform: scale(1.1);
 }
 
-.iconos-redes-sociales a:hover{
-    background-color: white;
-    border: 2px solid #333333;
-
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
 }
 
-.iconos-redes-sociales a:hover i{
-    color: black;
+.iconos-redes-sociales a:hover i {
+    color: var(--celeste);
 }
 
-.derechos-autor{
-    font-size: 15px;
-    color: black;
-    padding: 20px;
+.info {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    margin-top: 20px;
 }
 
-#scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
-}
-
-#scrollToTop i{
-    font-size: 25px;
-}
-
-#scrollToTop:hover {
-    background-color: #333333; 
+.derechos-autor {
+    font-size: 0.875rem;
+    color: #bbb;
+    margin-top: 20px;
 }
 
 /*Pagina Accesorios*/
@@ -815,4 +789,4 @@ hr{
     .medio{
         align-items: center;
     }
-}   
+}
