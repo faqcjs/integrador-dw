@@ -187,6 +187,10 @@ a{
     width: 100%;
     height: 100%;
 }
+.navbar button{
+    border-color: #F2F2F2;
+}
+
 
 /* Planes */
 
