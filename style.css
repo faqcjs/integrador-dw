@@ -39,7 +39,7 @@ button, .cta {
 }
 .seccion-oscura{
     color: white;
-    background-color: #333333 ;
+    background-color: var(--blanco) ;
 }
 
 .seccion-clara{
@@ -49,7 +49,7 @@ button, .cta {
 
 .seccion-roja{
     color: black;
-    background-color: #d10000;
+    background-color: var(--gris);
 }
 
 .seccion-titulo{
@@ -164,6 +164,16 @@ a{
     width: 100%;
 }
 
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay oscuro */
+    z-index: 1;
+}
+
 .carousel-caption {
     position: absolute;
     top: 50%;
@@ -173,7 +183,8 @@ a{
     color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 60%; /* Ajusta el ancho del texto */
+    width: 60%;
+    z-index: 2; 
 }
 
 .carousel-caption h1{
@@ -186,39 +197,101 @@ a{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
 }
 .navbar button{
     border-color: #F2F2F2;
 }
 
 
-/* Planes */
+/* Servicios */
+.servicios{
+    height:fit-content;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
 
+.servicios .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem; /* Añade margen inferior */
+}
 
-.planes{
-    max-height: auto;
-    padding: 10px;
-    padding: 0;
-    margin: 0;
+.servicios .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.servicios .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.servicios .card-text {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.servicios .card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+    display: inline-block;
+    padding: 7px 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'Merriweather', sans-serif;
 }
 
 
-.plan-card{
+.servicios .card-link:hover {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #0056b3;
+    padding: 7px 24px;
+}
+
+.servicios .card-link::after {
+    
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.servicios .card-link:hover::after {
+    margin-left: 10px;
+}
+
+.servicios .bi {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+
+
+.tit-servicio {
+    color: black;
+}
+
+.tit-servicio h1 {
+    font-size: 3rem;
+    color: #333333;
+}
+
+.tit-servicio p {
     font-size: 2rem;
-    margin: 0;
-    padding: 0;
 }
-
-.plan-card img{
-    max-width: 100%;
-    height: 300px;
-}
-
-.iconos-plan{
-    width: 53px;
-    height: 53px;
-}
-
 /* Experiencuia */
 
 .experiencia{
@@ -228,7 +301,7 @@ a{
 }
 
 .custom-section {
-    background-color: #333333;
+    
     color: #e8e6d7;
     padding: 20px;
 }
@@ -250,7 +323,7 @@ a{
 
 .rectangulo{
     margin-top: -4rem;
-    background-color: #3A98FF;
+    background-color: var(--celeste);
     border-radius: 10px;
     box-shadow: 0px 1px 3px 1px rgb(173, 172, 172);
 }
@@ -295,6 +368,68 @@ a{
 .btn-danger{
     background-color: #d10000;
 }
+
+/* FAQ */
+.faq {
+    color: white;
+    padding: 100px;
+    padding-top: 20px;
+    border-top: solid 2px #3333332f;
+}
+
+.faq h2 {
+    color: #333;
+}
+
+.accordion-item {
+    border-top: solid 1px var(--celeste);
+    border-radius: 0 !important ; /* Bordes no redondeados */
+    background-color: #F2F2F2;
+    cursor: pointer;
+    
+}
+
+
+.accordion-header {
+    border-bottom: 1px solid var(--celeste); /* Grosor de 5px y color negro */
+    border-radius: 0 !important; /* Bordes no redondeados */
+    
+}
+.accordion-header button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+.accordion-button:hover{
+    background-color: #7394bf7b;
+}
+
+.accordion-button {
+    border-radius: 0 !important; /* Bordes no redondeados */
+    border: none;
+    background-color: #F2F2F2;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para la animación del fondo y color */
+    font-family: 'Merriwather', sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333;
+    
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    border-top: 1px solid #7394bf7b; /* Grosor de 5px y color negro */
+    border-radius: 0 !important; /* Bordes no redondeados */
+}
+
 
 /* Footer */
 
@@ -573,15 +708,6 @@ hr{
     .overlay i{
         font-size: 40px;
     }
-   
-    .plan-card img{
-        max-width: 20%;
-        height: auto;
-    }
-    .experiencia{
-        font-size: 1.2rem;
-         
-    }
 
     .carousel-caption h1{
         font-size: 2.5rem;
@@ -595,6 +721,20 @@ hr{
 
     h2{
         font-size: 2rem;
+    }
+    .tit-servicio h1 {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    }
+    .tit-servicio p {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+    }
+    
+    .faq{
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    .accordion-header button{
+        font-size: 1rem;
     }
     
 }
@@ -643,9 +783,7 @@ hr{
         
         margin-top: 10px;
     }
-    .nav-item{
-        
-    }
+    
     .nav-item a {
         color: #333333; /* Color oscuro para fondo claro */
         font-size: 1.2rem;
@@ -660,12 +798,17 @@ hr{
 }
 
 @media screen and (max-width: 975px){
-    .planes{
-        padding: 0;
-        margin: 0;
-    }
+    
+    
+
     .carousel-inner, .carousel-item {
         height: 100vh;
     }
-    
-}
+    .planes .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .medio{
+        align-items: center;
+    }
+}   
