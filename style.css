@@ -26,6 +26,7 @@ section{
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
+    font-size: 2.5rem;
 }
 button, .cta {
     font-family: 'Montserrat', sans-serif;
@@ -105,6 +106,7 @@ a{
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .navbar-logo {
@@ -117,14 +119,20 @@ a{
 
 .nav-item{
     font-size: 1.5rem;
+    border: #f2f2f2 solid;
+    padding: 0.2rem;
 }
 
 .nav-item a{
+    
     color: white;
     font-weight: 700;
     line-height: 1.6;
 }
 
+.nav-item:hover{
+    border-color: var(--azul);
+}
 .nav-item a:hover{
     color: var(--celeste);
 }
@@ -156,7 +164,24 @@ a{
     width: 100%;
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Ajusta el ancho del texto */
+}
 
+.carousel-caption h1{
+    font-size: 4.5rem;
+}
+.carousel-caption p{
+    font-size: 2rem;
+}
 .carousel-img {
     object-fit: cover;
     width: 100%;
@@ -554,6 +579,12 @@ hr{
          
     }
 
+    .carousel-caption h1{
+        font-size: 2.5rem;
+    }
+    .carousel-caption p{
+        font-size: 1.2rem;
+    }
     .carousel-inner, .carousel-item {
         height: 50vh;
     }
@@ -570,9 +601,7 @@ hr{
         display: none;
     }
     
-    .hero{
-        height: 400px;
-    }
+    
 
     .carousel-inner, .carousel-item {
         height: 60vh;
@@ -604,7 +633,19 @@ hr{
         width: 103px;
         height: 85px;
     }
-   
+    .navbar-collapse {
+        background-color: #F2F2F2;
+        padding: 1rem;
+        
+        margin-top: 10px;
+    }
+    .nav-item{
+        
+    }
+    .nav-item a {
+        color: #333333; /* Color oscuro para fondo claro */
+        font-size: 1.2rem;
+    }
     
 }
 
