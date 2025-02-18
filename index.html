@@ -231,11 +231,27 @@
     
     
     
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
+                let navbar = document.querySelector(".navbar");
+                console.log("Scroll detectado: " + window.scrollY); // Ver si el evento se activa
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                    console.log("Clase agregada");
+                } else {
+                    navbar.classList.remove("scrolled");
+                    console.log("Clase eliminada");
+                }
+            });
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    
    
    
-   <!-- Botón flotante -->
 
 
     
