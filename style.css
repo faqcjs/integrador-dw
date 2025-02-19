@@ -684,10 +684,10 @@ hr{
     }
 
     .carousel-caption h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .carousel-caption p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .carousel-inner, .carousel-item {
         height: 50vh;
@@ -697,10 +697,10 @@ hr{
         font-size: 2rem;
     }
     .tit-servicio h1 {
-        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+        font-size: 2rem; 
     }
     .tit-servicio p {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+        font-size: 1.5rem; 
     }
     
     .faq{
