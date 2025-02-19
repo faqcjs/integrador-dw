@@ -459,28 +459,33 @@ footer img {
     
 }
 
-.info-servicios .nav-link{
+.tablist-content{
+    padding: 10px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.tablist-content .nav-link{
     color: black;
     font-size: 1.2rem;
     font-family: 'Marriweather', sans-serif;
-    font-weight: 500; 
-}
-
-
-.tab-content{
+    font-weight: 500;
     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-top: none;
 }
 
+.nav-link.active{
+    color: black !important;
+    background-color: white!important;
+    border-radius: 0 !important;
+    border: solid 3px black;
+}
 
 .tab-pane{
     color: black;
     font-size: 1.5rem;
     font-style:'Lora', sans-serif;
     padding: 25px;
-
-    
 }
 
 .tab-pane a{
@@ -709,6 +714,10 @@ hr{
     .accordion-header button{
         font-size: 1rem;
     }
+
+    .info-servicios{
+        line-height: normal;
+    }
     
 }
 
@@ -755,15 +764,17 @@ hr{
         margin-top: 10px;
     }
     
-    .tablist-content ul{
-        display: flex;
-        justify-content: center;
-        
+    .tab-pane{
+        font-size: 1.2rem;
     }
-    
-    .tablist-content li{
-        
-        width: fit-content;
+
+    .info-servicios{
+        padding: 10px;
+        line-height: 1.4;
+    }
+
+    .tablist-content .nav-link{
+        font-size: 1rem;
     }
 
 }
@@ -794,7 +805,7 @@ hr{
     }
 
     .info-servicios{
-        padding: 0;
+        padding: 10px;
         padding-top: 50px;
     }
 }
