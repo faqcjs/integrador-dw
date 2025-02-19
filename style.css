@@ -108,7 +108,6 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-
     background-color: var(--verde); /* Cambia el fondo al hacer scroll */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -133,14 +132,13 @@ a{
 .nav-item{
     font-size: 1.5rem;
     border: #f2f2f2 solid;
-    padding: 0.2rem;
+    padding: 0;
 }
 
 .nav-item a{
-    
     color: white;
     font-weight: 700;
-    line-height: 1.6;
+    letter-spacing: 0.02em;
 }
 
 .nav-item:hover{
@@ -157,24 +155,55 @@ a{
 }
 
 .navbar-logo img{
-    width: 153px;
-    height: 135px;
+    width: 135px;
+    height: 110px;
 }
 
-#logo{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-}
 
 
 /* Hero */
 .hero {
-    height:fit-content; 
-    overflow: hidden; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hero2{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
+.hero2 .banner {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero2 .hero-img { 
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    object-position: center; /* Centra la imagen */
+}
+
+.hero2 .hero-title {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor legibilidad */
+}
 .carousel-inner, .carousel-item, .carousel-img {
     width: 100%;
+
 }
 
 .carousel-overlay {
@@ -244,7 +273,7 @@ a{
 .servicios .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -256,12 +285,12 @@ a{
 
 .servicios .card-link {
     text-decoration: none;
-    color: #007bff;
+    color: var(--azul);
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
     display: inline-block;
     padding: 7px 20px;
-    border: 2px solid #007bff;
+    border: 2px solid var(--celeste);
     border-radius: 5px;
     background-color: transparent;
     font-family: 'Merriweather', sans-serif;
@@ -270,8 +299,8 @@ a{
 
 .servicios .card-link:hover {
     color: #ffffff;
-    background-color: #007bff;
-    border-color: #0056b3;
+    background-color: var(--celeste);
+    border-color: var(--celeste);
     padding: 7px 24px;
 }
 
@@ -305,86 +334,10 @@ a{
 .tit-servicio p {
     font-size: 2rem;
 }
-/* Experiencuia */
 
-.experiencia{
-    padding: 100px; 
-    padding-top: 0;
-    margin: 0;
-}
-
-.custom-section {
-    
-    color: #e8e6d7;
-    padding: 20px;
-}
-.divider {
-    border-left: 10px solid #e8e6d7;
-    height: 100%;
-}
-
-
-
-/* Seccion contacto */
-
-.contacto .container{
-    max-width: 1100px;
-    min-height: 100px;
-    padding: 20px;
-
-}
-
-.rectangulo{
-    margin-top: -4rem;
-    background-color: var(--celeste);
-    border-radius: 10px;
-    box-shadow: 0px 1px 3px 1px rgb(173, 172, 172);
-}
-
-.contacto .row{
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.contacto h1{
-    font-size: 2rem;
-}
-
-.contacto .descripcion{
-    color:#333333;
-    font-size: 1.3rem;
-}
-
-.contacto form{
-    
-    text-align: start;
-}
-.contacto p{
-    color: white;
-}
-
-.contacto input, textarea{
-    padding-bottom: 1rem;
-}
-
-.contacto button{
-    align-items:center;
-}
-
-.icono-cont{
-    width: 20px;
-    height: 20px;
-}
-
-.btn-danger{
-    background-color: #d10000;
-}
 
 /* FAQ */
 .faq {
-    color: white;
     padding: 100px;
     padding-top: 20px;
     border-top: solid 2px #3333332f;
@@ -499,37 +452,70 @@ footer img {
     margin-top: 20px;
 }
 
-/*Pagina Accesorios*/
+/*Pagina Servicios*/
 
-.accesorios{
-    background: rgba(51, 51, 51, 0.21);
-    max-width: fit-content;
-    padding: 5rem;
+.info-servicios{
+    padding: 100px;
+    
 }
 
-.card{
-    background: #F2F2F2;
-}
-.card-body{
-    padding-top: rem;
-    text-align: center;
-    font-size: 14px;
-}
-.card-body h5{
-    font-size: 14px;
+.info-servicios .nav-link{
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Marriweather', sans-serif;
+    font-weight: 500; 
 }
 
-.card-text-1{
-    text-align: start;
-    font-weight: 600;
+.info-servicios ul{
+    
+    
 }
 
-.rosado{
-    background: rgba(246, 224, 224, 0.74);
-
+.tab-content{
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-top: none;
 }
 
 
+.tab-pane{
+    color: black;
+    font-size: 1.5rem;
+    font-style:'Lora', sans-serif;
+    padding: 25px;
+
+    
+}
+
+.tab-pane a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+    display: inline-block;
+    padding: 7px 15px;
+    border: 2px solid var(--celeste);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+.tab-pane a:hover {
+    color: #ffffff;
+    background-color: var(--azul);
+    border-color: var(--celeste);
+    padding: 7px 20px;
+}
+
+.tab-pane a::after {
+    
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+.tab-pane a:hover::after {
+    margin-left: 10px;
+}
 
 /*Pagina Contacto*/
 
@@ -769,23 +755,28 @@ hr{
         height: 85px;
     }
     .navbar-collapse {
-        
         padding: 1rem;
-        
         margin-top: 10px;
     }
     
-    .nav-item a {
-       
-        font-size: 1.2rem;
+    .tablist-content ul{
+        display: block;
+        
+        
     }
     
+    .tablist-content li{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (min-width: 700px) {
     .hero-inferior-img{
         max-width: 600px;
     }
+    
 }
 
 @media screen and (max-width: 975px){
@@ -804,5 +795,10 @@ hr{
     }
     .navbar li{
         border: none;
+    }
+
+    .info-servicios{
+        padding: 0;
+        padding-top: 50px;
     }
 }
