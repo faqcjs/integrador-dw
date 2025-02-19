@@ -523,9 +523,7 @@ footer img {
 
 }
 
-.testimonios .carousel{
-    max-width: 800px;
-}
+
 
 .testimonios .carousel-item{
     height: 500px;
@@ -545,7 +543,7 @@ footer img {
 }
 
 .testimonio-text{
-    
+    padding: 10px 150px;
     line-height: 1.2;
     font-size: 20px;
     text-align: center;
@@ -553,6 +551,7 @@ footer img {
 
 .testimonio-info{
     font-weight: bold;
+    
 }
 
 .testimonio-info p{
@@ -567,6 +566,7 @@ footer img {
     font-size: 0.9rem;
 }
 /* Formulario de contacto */
+
 .contact-form-section {
     background-color: #f8f9fa;
     padding: 60px 0;
@@ -711,7 +711,7 @@ footer img {
         line-height: normal;
     }
     .testimonio-text {
-        margin: 10px 60px;
+        padding: 10px 50px;
         font-size: 1.1rem;
     }
 }
