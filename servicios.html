@@ -58,7 +58,7 @@
 
     <!-- Hero -->
     <section class="hero2">
-        <!-- Carousel (fondo) -->
+       
         <div class="container">
             <div class="banner">
                 <img src="img/foto-2.jpg" alt="hero-img" class="hero-img">
@@ -67,8 +67,14 @@
         </div>
         
     </section>
+
+    <!-- Info servicios -->
     <section class="info-servicios">
         <div class="container text-center">
+            <div class="py-5">
+                <h2>Conoce nuestros servicios</h2>
+                <p class="fs-2">"Protegemos tus derechos y te brindamos la asesoría legal que necesitas."</p>
+            </div>
             <div class="tablist-content d-flex align-items-start">
                 <div class="nav flex-column nav-pills me-3 gap-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Derecho Penal</button>
@@ -84,8 +90,78 @@
               </div>
         </div>
     </section>
-    
-     
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container py-5">
+            <h2 class="text-center">Testimonios</h2>
+            <p class="fs-2 text-center">Algunos de los testimonios de nuestros Clientes</p>
+        </div>
+        <div id="carouselExample" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active testimonio-content ">
+                    <img src="img/cliente1.jpeg" alt="" class="testimonio-img rounded-circle">
+                    <p class="testimonio-text">"Después de ser despedido injustamente, pensé que no tenía opciones. Este equipo me guió en todo el proceso y logramos obtener mi indemnización. Su apoyo fue clave para hacer valer mis derechos."</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Ingeniero</p>
+                    </div>
+              </div>
+              <div class="carousel-item testimonio-content">
+                    <img src="img/cliente2.jpg" alt="" class="testimonio-img rounded-circle">
+                    <p class="testimonio-text">"Pasar por un divorcio fue difícil, pero con su ayuda logré un acuerdo justo para mis hijos y para mí. Me dieron confianza y tranquilidad en todo momento. ¡Los recomiendo totalmente!"</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Sandra</p>
+                        <p class="cargo">Ama de casa</p>
+                    </div>
+              </div>
+                <div class="carousel-item testimonio-content">
+                    <img src="img/cliente3.jpeg" alt="" class="testimonio-img rounded-circle">
+                    <p class="testimonio-text">"Me encontré en una situación difícil y no sabía a quién acudir. Gracias a su defensa impecable, logramos demostrar mi inocencia. Son abogados comprometidos y altamente profesionales. Eternamente agradecida."</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Carlos</p>
+                        <p class="cargo">Medico Cirujano</p>
+                    </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer d-flex flex-column align-items-center justify-content-center gap-4 py-5">
+        <img src="img/logo2.png" alt="Logo" id="logo" class="mb-4">
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center mb-4">
+            <a href="https://x.com" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+        <div class="info text-center">
+            <p>Av. Principal #123, Col. Centro, CDMX</p>
+            <p>Teléfono: 55 1234 5678</p>
+            <p>Correo: contacto@equitasabogados.com</p>
+        </div>
+        <div class="derechos-autor text-center mt-4">
+            <p>&#169; 2024 Todos los derechos reservados</p>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

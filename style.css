@@ -518,6 +518,53 @@ footer img {
     margin-left: 10px;
 }
 
+.testimonios{
+    padding: 40px 40px 40px 40px;
+
+}
+
+.testimonios .carousel{
+    max-width: 800px;
+}
+
+.testimonios .carousel-item{
+    height: 500px;
+}
+
+.testimonio-img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.testimonio-text{
+    line-height: 1.2;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info{
+    font-weight: bold;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-info .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+}
 /*Pagina Contacto*/
 
 
