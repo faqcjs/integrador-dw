@@ -766,7 +766,9 @@ hr{
     .info-servicios{
         line-height: normal;
     }
-    
+    .testimonio-text {
+        margin: 10px 60px;
+    }
 }
 
 
