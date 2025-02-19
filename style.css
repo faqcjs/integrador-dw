@@ -466,10 +466,6 @@ footer img {
     font-weight: 500; 
 }
 
-.info-servicios ul{
-    
-    
-}
 
 .tab-content{
     
@@ -760,14 +756,14 @@ hr{
     }
     
     .tablist-content ul{
-        display: block;
-        
+        display: flex;
+        justify-content: center;
         
     }
     
     .tablist-content li{
-        display: flex;
-        justify-content: center;
+        
+        width: fit-content;
     }
 
 }
