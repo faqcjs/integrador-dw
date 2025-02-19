@@ -566,100 +566,44 @@ footer img {
 .testimonio-info .cargo{
     font-size: 0.9rem;
 }
-/*Pagina Contacto*/
-
-
-.formulario {
-    background: linear-gradient(45deg, rgba(0, 35, 51, 1), rgba(0, 51, 102, 1));
-
-    height: 768px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+/* Formulario de contacto */
+.contact-form-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
 }
 
-hr{
-    color: white;
+.contact-form-section h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.05em;
 }
 
-.form-container {
-    background-color: rgba(45, 59, 74, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 70%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    color: white;
+.contact-form-section .form-label {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #333333;
 }
 
-.form-container h2{
-    
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.13px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+.contact-form-section .form-control {
+    border: 1px solid #2E3D59;
+    border-radius: 5px;
 }
 
-.form-label {
-    color: white;
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-}
-
-.custom-input {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--gray-depth);
-    color: white;
-    padding: 0.75rem 1rem;
-    transition: all 0.2s ease;
-}
-
-.custom-input:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--primary);
-    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25);
-    outline: none;
-}
-
-.custom-input::placeholder {
-    color: rgba(180, 190, 201, 0.5);
-}
-
-.custom-button {
-    background-color: var(--primary);
+.contact-form-section .btn-primary {
+    background-color: #2E3D59;
     border: none;
-    color: white;
-    padding: 0.75rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease;
 }
 
-.custom-button:hover {
-    background-color: #b80000;
-    transform: translateY(-2px);
+.contact-form-section .btn-primary:hover {
+    background-color: #142426;
 }
 
-.custom-button:active {
-    transform: translateY(0);
-}
-
-.text-gray {
-    color: var(--gray);
-}
-
-.text-accent {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.text-accent:hover {
-    color: #b80000;
-}
 
 
 

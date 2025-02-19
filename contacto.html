@@ -14,9 +14,9 @@
     <title>Vortelix</title>
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-
 </head>
 <body>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg position-absolute w-100 navbar-light  ">
         <div class="container-fluid">
@@ -34,11 +34,7 @@
                 <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3">
                     
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#servicios">Servicios</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                        <a class="nav-link " aria-current="page" href="./servicios.html">Servicios</a>
                     </li>
                     
                     <li class="nav-item">
@@ -54,26 +50,49 @@
             </div>
         </div>
     </nav>
+    
+    <!-- Hero -->
     <section class="hero2">
        
         <div class="container">
             <div class="banner">
-                <img src="img/foto-3.jpg" alt="hero-img" class="hero-img">
-                <h1 class="hero-title">Nosotros</h1>
+                <img src="img/foto-1.jpg" alt="hero-img" class="hero-img">
+                <h1 class="hero-title">Contacto</h1>
             </div>
         </div>
         
     </section>
-
-    <section class="nosotros">
-        <div class="container py-5">
-        <h1 class="text-center">Quienes somos?</h1>
-        <p class="fs-4 py-5 text-center"> En Equitas Abogados, nos especializamos en brindar soluciones legales eficientes y estratégicas en las áreas de Derecho Penal, Familiar y Laboral. Con sede en San Juan, Argentina, nuestro compromiso es defender los derechos de nuestros clientes con integridad, profesionalismo y una atención personalizada <br> <br>
-            Contamos con un equipo de abogados altamente capacitados y con amplia experiencia en el ámbito jurídico, lo que nos permite abordar cada caso con la seriedad y dedicación que merece. En el área penal, trabajamos tanto en la defensa como en la representación de víctimas, garantizando un proceso justo y el respeto por las garantías constitucionales. En derecho familiar, brindamos asesoramiento en divorcios, régimen de visitas, tenencia, adopciones y pensión alimenticia, buscando siempre soluciones que prioricen el bienestar de nuestros clientes y sus familias. En derecho laboral, representamos tanto a trabajadores como a empleadores en conflictos laborales, despidos, indemnizaciones y conciliaciones, asegurando que se respeten sus derechos en el ámbito del trabajo. <br> <br>
-            En Equitas Abogados, comprendemos que enfrentar un problema legal puede ser un momento de gran incertidumbre y preocupación. Por ello, nos enfocamos en ofrecer un trato cercano y transparente, explicando cada paso del proceso para que nuestros clientes se sientan respaldados en todo momento. Nuestra misión es brindar un servicio jurídico de calidad, basado en la ética profesional y el compromiso con la justicia.
-            Si buscas asesoramiento legal en San Juan, Argentina, nuestro equipo está listo para atenderte con la seriedad y responsabilidad que tu caso requiere. <br> <br> <strong> Equitas Abogados, tu defensa es nuestra prioridad.</strong> </p>
-        </div>
-    </section>
+    <!-- Formulario de contacto -->
+        <section class="contact-form-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="text-center mb-4">Agenda tu cita</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje"></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Footer -->
     <footer class="footer d-flex flex-column align-items-center justify-content-center gap-4 py-5">
