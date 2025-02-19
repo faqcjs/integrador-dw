@@ -545,6 +545,7 @@ footer img {
 }
 
 .testimonio-text{
+    
     line-height: 1.2;
     font-size: 20px;
     text-align: center;
@@ -837,9 +838,7 @@ hr{
     
     
 
-    .carousel-inner, .carousel-item {
-        height: 100vh;
-    }
+    
     .planes .container {
         padding-left: 15px;
         padding-right: 15px;
