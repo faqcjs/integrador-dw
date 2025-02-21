@@ -620,6 +620,11 @@ footer img {
     color: black;
 }
 
+.modal-header h5{
+    font-weight: 500;
+}
+
+
 .modal-body{
     padding: 2rem;
     color: black;
@@ -644,7 +649,9 @@ footer img {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 0;
+    color: black;
 }
+
 
 .proyecto{
     position: relative;
@@ -782,6 +789,11 @@ footer img {
         padding: 10px 50px;
         font-size: 1.1rem;
     }
+
+    iframe{
+        width: 325px;
+    }
+
 }
 
 
