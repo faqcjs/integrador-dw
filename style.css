@@ -802,6 +802,9 @@ footer img {
         display: none;
     }
     
+    .navbar a{
+        font-size: 1.2rem;
+    }
     
 
     .carousel-inner, .carousel-item {
