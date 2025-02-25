@@ -7,8 +7,6 @@
     --blanco: ##F2F2F2;
 }
 
-
-
 body{
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -38,52 +36,10 @@ button, .cta {
     padding: 10px 20px;
     border-radius: 5px;
 }
-.seccion-oscura{
-    color: white;
-    background-color: var(--blanco) ;
-}
 
-.seccion-clara{
-    color: black;
-    background-color: white;
-}
-
-.seccion-roja{
-    color: black;
-    background-color: var(--gris);
-}
-
-.seccion-titulo{
-    font-size: 3rem;
-    padding: 15px 0;
-    font-family: 'Roboto Flex', cursive;
-}
-
-.titulo-amarillo{
-    color:rgba(255, 255, 120, 1);
-    padding-bottom: 25px;
-
-}
-.seccion-descripcion{
-    font-size: 1.2rem;
-    color: #584e4e;
-}
-
-.seccion-texto{
-    font-size: 1.2rem;
-}
-
-.texto-negro{
-    color: black;
-}
-
-.texto-blanco{
-    color: var(--blanco);
-}
 
 a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 
@@ -111,7 +67,6 @@ a{
     z-index: 1000;
     
 }
-
 
 .navbar-collapse{
     align-items: center;
@@ -360,7 +315,7 @@ a{
 
 .accordion-item {
     border-top: solid 1px var(--celeste);
-    border-radius: 0 !important ; /* Bordes no redondeados */
+    border-radius: 0 !important ; 
     background-color: #F2F2F2;
     cursor: pointer;
     
@@ -368,8 +323,8 @@ a{
 
 
 .accordion-header {
-    border-bottom: 1px solid var(--celeste); /* Grosor de 5px y color negro */
-    border-radius: 0 !important; /* Bordes no redondeados */
+    border-bottom: 1px solid var(--celeste); 
+    border-radius: 0 !important; 
     
 }
 .accordion-header button{
@@ -384,11 +339,11 @@ a{
 }
 
 .accordion-button {
-    border-radius: 0 !important; /* Bordes no redondeados */
+    border-radius: 0 !important; 
     border: none;
     background-color: #F2F2F2;
     color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para la animación del fondo y color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
     font-family: 'Merriwather', sans-serif;
 }
 
@@ -403,8 +358,8 @@ a{
 }
 
 .accordion-body {
-    border-top: 1px solid #7394bf7b; /* Grosor de 5px y color negro */
-    border-radius: 0 !important; /* Bordes no redondeados */
+    border-top: 1px solid #7394bf7b; 
+    border-radius: 0 !important; 
     font-size: 1.2rem;
 }
 
@@ -473,7 +428,6 @@ footer img {
 
 .tablist-content{
     padding: 10px;
-   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -483,7 +437,6 @@ footer img {
     font-size: 1.2rem;
     font-family: 'Marriweather', sans-serif;
     font-weight: 500;
-    
 }
 
 .nav-link.active{
@@ -532,7 +485,6 @@ footer img {
 
 .testimonios{
     padding: 40px 40px 40px 40px;
-
 }
 
 
@@ -577,8 +529,8 @@ footer img {
 .testimonio-info .cargo{
     font-size: 0.9rem;
 }
-/* Formulario de contacto */
 
+/* Formulario de contacto */
 .contact-form-section {
     background-color: #f8f9fa;
     padding: 60px 0;
@@ -726,67 +678,6 @@ footer img {
     justify-content: center;
 }
 
-.bi.geo-alt{
-    color: var(--verde);
-}
-/* Blog */
-
-.hero-blog{
-    background-image: url(img/fondo-blog.png);
-    height: 350px;
-    font-family: "Roboto Flex", sans-serif;
-    color:#d10000;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.13px;
-    text-align: left;
-}
-.conatainer-q{
-    background-color: #333333;
-}
-
-.texto-rojo{
-    color: #d10000;
-}
-
-.hero-cards{
-    
-    background-image: url(img/fondo-blog.png);
-    padding: 3rem;
-    padding-bottom: 20px;
-
-}
-
-.card-1{
-    border-radius: 16px;
-    border: none;
-    font-weight: bold;
-    background: white
-}
-
-.card-body-1{
-    gap: 5rem;
-    text-align: start;
-}
-
-
-
-.card-body-1 h6{
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.card-body-1 p{
-    font-weight: 500;
-}
-
-.card-1 img{
-    border-radius: 16px;
-}
-
-
-
-
 /* Diseño responsivo */
 
 @media screen and (max-width: 1280px){
@@ -866,28 +757,12 @@ footer img {
         height: 60vh;
     }
     
-    .plan-card img{
-        max-width: 80%;
-        height: auto;
-    }
-
-    
-    .experiencia{
-        font-size: 1.2rem;
-        padding: 2.5rem;
-        padding-bottom: 100px;
-    }
-
     .nav-item{
         font-size: 0.8rem;
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
 
-    .accesorios{
-        margin: 0;
-    }
-    
     .navbar-logo img{
         width: 103px;
         height: 85px;
@@ -916,23 +791,13 @@ footer img {
     .hero-inferior-img{
         max-width: 600px;
     }
-    
 }
 
 @media screen and (max-width: 975px){
-    
     .navbar{
         background-color: var(--verde);
     }
 
-    
-    .planes .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .medio{
-        align-items: center;
-    }
     .navbar li{
         border: none;
     }
