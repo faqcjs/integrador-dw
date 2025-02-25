@@ -125,13 +125,10 @@
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener("scroll", function () {
                 let navbar = document.querySelector(".navbar");
-                console.log("Scroll detectado: " + window.scrollY); // Ver si el evento se activa
                 if (window.scrollY > 50) {
                     navbar.classList.add("scrolled");
-                    console.log("Clase agregada");
                 } else {
                     navbar.classList.remove("scrolled");
-                    console.log("Clase eliminada");
                 }
             });
         });
