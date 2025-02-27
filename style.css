@@ -530,6 +530,63 @@ footer img {
     font-size: 0.9rem;
 }
 
+/* Nosotros */
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px ;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width:4px;
+    background-color: var(--celeste);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+    
+}
+
+
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 4px solid var(--celeste);
+    border-radius: 50%;
+    top: 25px;
+    left:  calc(50% - 10px);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+
 /* Formulario de contacto */
 .contact-form-section {
     background-color: #f8f9fa;
@@ -686,7 +743,23 @@ footer img {
         
     }
     
+    
 }
+
+
+@media (min-width: 965px) {
+    .timeline-item:nth-child(odd)::before {
+        left: calc(96% + 15px); /* Mueve el círculo fuera del card-body hacia la derecha */
+        transform: translateX(-50);
+        
+    }
+    .timeline-item:nth-child(even)::before {
+        left: calc(-4% + 15px); /* Mueve el círculo fuera del card-body hacia la derecha */
+        
+        
+    }
+}
+
 
 @media screen and (max-width: 575px) {
     .overlay p{
@@ -740,6 +813,23 @@ footer img {
         width: 325px;
     }
 
+    .timeline::after {
+        left: 15px;
+    }
+    .timeline-item {
+        padding-left: 30px;
+    }
+    .timeline-item::before {
+        left: 15px;
+        width: 15px;
+        height: 15px;
+        border-width: 3px;
+    }
+    .timeline-card {
+        font-size: 14px;
+        padding: 10px;
+    }
+
 }
 
 
@@ -791,6 +881,14 @@ footer img {
     .hero-inferior-img{
         max-width: 600px;
     }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+    .timeline-item::before {
+        left: 20px;
+    }
+
 }
 
 @media screen and (max-width: 975px){
@@ -806,4 +904,20 @@ footer img {
         padding: 10px;
         padding-top: 50px;
     }
+
+    .timeline::after {
+        left: 25px;
+    }
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 50px;
+        text-align: left;
+    }
+    .timeline-item::before {
+        left: 25px;
+    
+
+}
+
 }
