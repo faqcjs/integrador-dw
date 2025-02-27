@@ -912,7 +912,7 @@ footer img {
         width: 100%;
         left: 0 !important;
         padding-left: 50px;
-        text-align: left;
+        text-align: left !important;
     }
     .timeline-item::before {
         left: 25px;
