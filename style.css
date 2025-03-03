@@ -735,6 +735,20 @@ footer img {
     justify-content: center;
 }
 
+.boton button{
+    border: solid 2px var(--celeste);
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boton button:hover {
+    transform: scale(1.1);
+    border-color: var(--celeste);
+}
+
 /* Diseño responsivo */
 
 @media screen and (max-width: 1280px){
